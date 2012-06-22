@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/workflow
+END
+PSNotificationSkipException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/workflow/PSNotificationSkipException.java
+END
+PSExitNotifyBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/workflow/PSExitNotifyBase.java
+END
+PSTokenSubstitutionProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/workflow/PSTokenSubstitutionProcessor.java
+END
+IPSTokenSubstitutionProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/workflow/IPSTokenSubstitutionProcessorFactory.java
+END
+PSCaseInsensitiveString.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/workflow/PSCaseInsensitiveString.java
+END
+PSTokenSubstitutionProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/workflow/PSTokenSubstitutionProcessorFactory.java
+END
+IPSTokenSubstitutionProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/workflow/IPSTokenSubstitutionProcessor.java
+END

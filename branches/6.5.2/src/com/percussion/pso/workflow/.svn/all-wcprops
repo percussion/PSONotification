@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/pso/workflow
+END
+PSOJndiMailProgram.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/pso/workflow/PSOJndiMailProgram.java
+END
+PSONotifyExtended.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/pso/workflow/PSONotifyExtended.java
+END
+PSOSpringMailProgram.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/pso/workflow/PSOSpringMailProgram.java
+END

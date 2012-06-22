@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PSO Notifcation" default="dist" basedir=".">
+	<description>
+        build PSO Enhanced notifications exits
+    </description>
+	<!-- set global properties for this build -->
+	<property environment="env"/>
+	<!-- base directory of Rhythmyx installation -->
+	<property name="rx_home" location="${env.RHYTHMYX_HOME}"/>
+	<!-- name of Rhythmyx Service -->
+	<property name="rx.service" value="${env.RHYTHMYX_SERVICE}"/>
+	<!-- name of our output jar -->
+	<property name="jarname" value="psonotification.jar"/>
+	<!-- name of our distribution zip -->
+	<property name="distfile" value="PSONotification.zip"/>
+	<!-- relative paths -->
+	<property name="src" location="src"/>
+	<property name="lib" location="lib"/>
+	<property name="bin" location="bin"/>
+	<property name="apidoc" location="apidoc"/>
+	<!-- used for running Windows commands -->
+	<property name="comspec" location="${env.ComSpec}"/>
+	<property name="cdrive" location="${env.USERPROFILE}"/>
+	<!-- Rhythmyx classpath  -->
+	<path id="rx.class.path">
+		<pathelement location="${rx_home}/lib/saxon.jar"/>
+		<pathelement location="${rx_home}/lib/rxextensions.jar"/>
+		<pathelement location="${rx_home}/lib/rxinstall.jar"/>
+		<pathelement location="${rx_home}/lib/rxserver.jar"/>
+		<pathelement location="${rx_home}/lib/rxclient.jar"/>
+		<pathelement location="${rx_home}/lib/xmlParserAPIs.jar"/>
+		<pathelement location="${rx_home}/lib/xercesImpl.jar"/>
+		<pathelement location="${rx_home}/lib/jaas.jar"/>
+		<pathelement location="${rx_home}/lib/jndi.jar"/>
+		<pathelement location="${rx_home}/lib/providerutil.jar"/>
+		<pathelement location="${rx_home}/lib/rxworkflow.jar"/>
+		<pathelement location="${rx_home}/lib/rxpublisher.jar"/>
+		<pathelement location="${rx_home}/lib/rxmisctools.jar"/>
+		<pathelement location="${rx_home}/lib/rxagent.jar"/>
+		<pathelement location="${rx_home}/lib/rxtablefactory.jar"/>
+		<pathelement location="${rx_home}/lib/percbeans.jar"/>
+		<pathelement location="${rx_home}/lib/rxi18n.jar"/>
+		<pathelement location="${rx_home}/lib/rxff.jar"/>
+		<pathelement location="${rx_home}/lib/log4j.jar"/>
+		<pathelement location="${rx_home}/lib/psctoolkit5.jar"/>
+	</path>
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp/>
+	</target>
+	<target name="compile" description="compile the source ">
+		<!-- Compile the java code from ${src} into ${bin} -->
+		<javac srcdir="${src}" destdir="${bin}" source="1.4" classpathref="rx.class.path"/>
+		<copy todir="${bin}">
+			<fileset dir="${src}">
+				<include name="**/*.xml"/>
+				<include name="**/*.properties"/>
+			</fileset>
+		</copy>
+	</target>
+	<target name="javadoc" depends="compile">
+		<mkdir dir="apidoc"/>
+		<javadoc destdir="apidoc" private="true" use="yes" windowtitle="${ant.project.name}">
+			<packageset dir="${src}" defaultexcludes="yes">
+				<include name="com/percussion/workflow/**"/>
+				<include name="com/percussion/pso/**"/>
+			</packageset>
+			<classpath refid="rx.class.path"/>
+		</javadoc>
+	</target>
+	<target name="jarbuilder" description="just build the jar, no server">
+		<delete file="${bin}/log4j.properties"/>
+		<propertyfile file="${bin}/build.properties">
+			<entry key="build.number" value="${build.number}"/>
+			<entry key="build.date" type="date" pattern="EEEE MMM dd yyyy" value="now"/>
+		</propertyfile>
+		<jar jarfile="${jarname}" basedir="${bin}">
+			<include name="com/percussion/pso/**"/>
+			<include name="com/percussion/workflow/**"/>
+			<exclude name="log4j.properties"/>
+			<include name="build.properties"/>
+			<include name="readme.txt"/>
+		</jar>
+	</target>
+	<target name="testbuild" depends="compile" description="build for local test">
+		<exec executable="net.exe" failonerror="false">
+			<arg line="stop ${rx.service}"/>
+			<env key="COMSPEC" path="${comspec}"/>
+		</exec>
+		<property name="build.number" value="test build"/>
+		<antcall target="jarbuilder"/>
+		<copy file="${jarname}" todir="${rx_home}/libExtras"/>
+		<copy file="Extensions.xml" todir="${rx_home}"/>
+		<copy file="RhythmyxServer.cp2" todir="${rx_home}"/>
+		<exec executable="net.exe" failonerror="true">
+			<arg line="start ${rx.service}"/>
+			<env key="COMSPEC" path="${comspec}"/>
+		</exec>
+	</target>
+	<target name="dist" depends="init, clean, javadoc" description="generate the distribution">
+		<buildnumber/>
+		<antcall target="jarbuilder"/>
+		<copy file="${jarname}" todir="${rx_home}/lib"/>
+		<zip destfile="${distfile}">
+			<zipfileset dir="." includes="${jarname}" prefix="libExtras"/>
+			<fileset dir="." includes="readme.txt, build.number"/>
+			<fileset dir="." includes="Extensions.xml InstallExtensions.bat InstallExtensions.sh"/>
+			<fileset dir="." includes="RhythmyxServer.cp2"/>
+			<zipfileset dir="${apidoc}" prefix="javadoc"/>
+			<fileset dir="src" includes="**.java"/>
+		</zip>
+	</target>
+	<target name="clean" description="clean up">
+		<delete dir="${bin}"/>
+		<mkdir dir="${bin}"/>
+	</target>
+</project>

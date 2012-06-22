@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PSXExtensionHandlerConfiguration handlerName="Java">
+   	<Extension categorystring="workflow" context="global/percussion/workflow/" deprecated="no" handler="Java" name="PSExitNotifyBase" restoreRequestParamsOnError="no">
+		<initParam name="com.percussion.user.description">Extensible Notification base exit</initParam>
+		<initParam name="com.percussion.extension.version">1</initParam>
+		<initParam name="className">com.percussion.workflow.PSExitNotifyBase</initParam>
+		<initParam name="com.percussion.extension.reentrant">yes</initParam>
+		<interface name="com.percussion.extension.IPSResultDocumentProcessor"/>
+		<PSXExtensionParamDef id="0">
+			<name>ContentId</name>
+			<dataType>java.lang.String</dataType>
+			<description>Content ID of transitioning document</description>
+		</PSXExtensionParamDef>
+		<PSXExtensionParamDef id="0">
+			<name>UserName</name>
+			<dataType>java.lang.String</dataType>
+			<description>Name of Transitioning User</description>
+		</PSXExtensionParamDef>
+		<suppliedResources/>
+	</Extension>   
+	<Extension categorystring="workflow" context="global/percussion/workflow/" deprecated="no" handler="Java" name="PSONotifyExtended" restoreRequestParamsOnError="no">
+		<initParam name="com.percussion.user.description">PSO Extended Notification exit</initParam>
+		<initParam name="com.percussion.extension.version">1</initParam>
+		<initParam name="className">com.percussion.pso.workflow.PSONotifyExtended</initParam>
+		<initParam name="com.percussion.extension.reentrant">yes</initParam>
+		<interface name="com.percussion.extension.IPSResultDocumentProcessor"/>
+		<PSXExtensionParamDef id="0">
+			<name>ContentId</name>
+			<dataType>java.lang.String</dataType>
+			<description>Content ID of transitioning document</description>
+		</PSXExtensionParamDef>
+		<PSXExtensionParamDef id="0">
+			<name>UserName</name>
+			<dataType>java.lang.String</dataType>
+			<description>Name of Transitioning User</description>
+		</PSXExtensionParamDef>
+		<suppliedResources/>
+	</Extension>   
+</PSXExtensionHandlerConfiguration>

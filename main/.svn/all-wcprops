@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/psolib/!svn/ver/4318/PSONotification/main
+END
+build.number
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/psolib/!svn/ver/4318/PSONotification/main/build.number
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/psolib/!svn/ver/4312/PSONotification/main/ivy.xml
+END
+ivysettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/psolib/!svn/ver/4168/PSONotification/main/ivysettings.xml
+END
+PSONotification.zip
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/psolib/!svn/ver/4318/PSONotification/main/PSONotification.zip
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/psolib/!svn/ver/4168/PSONotification/main/log4j.properties
+END
+ivy-local.sample.properties
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/psolib/!svn/ver/4168/PSONotification/main/ivy-local.sample.properties
+END
+deploy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/psolib/!svn/ver/4168/PSONotification/main/deploy.xml
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/psolib/!svn/ver/4318/PSONotification/main/readme.txt
+END
+Install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psolib/!svn/ver/4168/PSONotification/main/Install.bat
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/psolib/!svn/ver/4312/PSONotification/main/build.xml
+END
+Extensions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/psolib/!svn/ver/313/PSONotification/main/Extensions.xml
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/psolib/!svn/ver/4168/PSONotification/main/install.sh
+END

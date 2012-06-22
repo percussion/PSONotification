@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/psolib/!svn/ver/4167/PSONotification/branches/5.7/src/com/percussion/workflow
+END
+PSCaseInsensitiveString.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/psolib/!svn/ver/4167/PSONotification/branches/5.7/src/com/percussion/workflow/PSCaseInsensitiveString.java
+END
+PSNotificationSkipException.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/psolib/!svn/ver/4167/PSONotification/branches/5.7/src/com/percussion/workflow/PSNotificationSkipException.java
+END
+PSExitNotifyBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/psolib/!svn/ver/4167/PSONotification/branches/5.7/src/com/percussion/workflow/PSExitNotifyBase.java
+END

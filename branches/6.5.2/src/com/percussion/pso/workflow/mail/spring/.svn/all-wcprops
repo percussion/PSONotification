@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/pso/workflow/mail/spring
+END
+PSOSpringMailServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/pso/workflow/mail/spring/PSOSpringMailServiceImpl.java
+END
+PSOSpringMailServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/pso/workflow/mail/spring/PSOSpringMailServiceLocator.java
+END
+IPSOSpringMailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/psolib/!svn/ver/4310/PSONotification/branches/6.5.2/src/com/percussion/pso/workflow/mail/spring/IPSOSpringMailService.java
+END

@@ -1,0 +1,8 @@
+﻿<jboss-web>
+     <!--  use this file only if you use the PSOJndiMailProgram -->
+     <resource-ref>
+            <res-ref-name>mail/defaultMail</res-ref-name>
+            <res-type>javax.mail.Session</res-type>
+            <jndi-name>java:/Mail</jndi-name>
+     </resource-ref>
+</jboss-web>

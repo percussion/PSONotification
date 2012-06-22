@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/build.xml
+END
+Extensions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/Extensions.xml
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/install.sh
+END
+build.number
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/build.number
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/ivy.xml
+END
+ivysettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/ivysettings.xml
+END
+PSONotification.zip
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/PSONotification.zip
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/log4j.properties
+END
+ivy-local.sample.properties
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/ivy-local.sample.properties
+END
+deploy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/deploy.xml
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/readme.txt
+END
+Install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/psolib/!svn/ver/4311/PSONotification/branches/6.5.2/main/Install.bat
+END

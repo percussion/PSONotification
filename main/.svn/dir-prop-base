@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 176
+apidoc
+psonotification.jar
+bin
+ivylib
+ivy-local.properties
+ivy-report.css
+percussion-pso-sample-optional.html
+percussion-pso-sample-test.html
+PSONotification-test.zip
+
+END
